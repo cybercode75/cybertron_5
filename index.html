@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreshGuard v12.0 - Total Sovereign Intelligence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-overlay" id="animationLayer"></div>
+<div class="scan"></div>
+
+<header>
+    <h1>FreshGuard</h1>
+    <p>Total Sovereign Strategic Intelligence | v12.0.1</p>
+</header>
+
+<div class="container">
+
+    <div class="page active" id="home">
+        
+        <div class="hero-stats">
+            <div>
+                <h2 style="margin:0; border:none; font-size:5.5em; color:var(--jade-glow); animation: glitchText 3s infinite;">SYSTEM: OMNI-NOMINAL</h2>
+                <div id="sys-clock" style="font-family:var(--font-mono); font-size:2.5em; margin-top:25px; color:#fff;">Global Time Syncing...</div>
+                <p style="color:var(--text-muted); font-size:1.4em; margin-top:25px;">Data Density: Maximum Threshold | Protocols: 500+ Verified | Source: Cybertron_final</p>
+            </div>
+            <div style="text-align:right;">
+                <div style="font-size:8em;">📡</div>
+                <div style="color:var(--jade-primary); font-weight:bold; font-size:2em;">Mesh Network Active</div>
+            </div>
+        </div>
+
+        <h2 class="section-header">🛡️ Active Environmental Defense Protocols</h2>
+
+        <div class="standard-card" onclick="toggle('rain-wrap')">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div style="font-size:3em; font-weight:900;">🌧️ Protocol 01: Precipitation Defense</div>
+                <div style="color:var(--jade-glow); font-family:var(--font-mono); font-weight:bold;">[ INITIALIZE HYDROMESH ]</div>
+            </div>
+        </div>
+        <div id="rain-wrap" class="toggle-wrap">
+            <div class="forecast-block">
+                <div>
+                    <span class="forecast-label">Live Hydro-Forecast</span>
+                    <h3 style="margin:0; font-size:2.5em;">Sustained Storm Front (Heavy Precipitation)</h3>
+                </div>
+                <div class="forecast-val">95% <small>Prob</small></div>
+            </div>
+            <div class="tool-overview">
+                <strong>Sovereign Objective:</strong> Managing catastrophic runoff and preventing anaerobic root rot through dynamic drainage and physical barriers.
+            </div>
+            <div class="comparison-grid">
+                <div class="comp-box">
+                    <h4 class="do-title">✅ Strategic Do's</h4>
+                    <ul id="rain-dos"></ul>
+                </div>
+                <div class="comp-box">
+                    <h4 class="dont-title">⛔ Prohibited Don'ts</h4>
+                    <ul id="rain-donts"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="standard-card" onclick="toggle('heat-wrap')">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div style="font-size:3em; font-weight:900;">🔥 Protocol 02: Thermal Stress Mitigation</div>
+                <div style="color:var(--jade-glow); font-family:var(--font-mono); font-weight:bold;">[ INITIALIZE THERMAL MESH ]</div>
+            </div>
+        </div>
+        <div id="heat-wrap" class="toggle-wrap">
+            <div class="forecast-block">
+                <div>
+                    <span class="forecast-label">Live Thermal Outlook</span>
+                    <h3 style="margin:0; font-size:2.5em;">Critical Thermal Peak (UV Index 12)</h3>
+                </div>
+                <div class="forecast-val">41°C <small>Max</small></div>
+            </div>
+            <div class="tool-overview">
+                <strong>Sovereign Objective:</strong> Protecting plant vascular systems from collapse during high Vapor Pressure Deficit (VPD) events.
+            </div>
+            <div class="comparison-grid">
+                <div class="comp-box">
+                    <h4 class="do-title">✅ Strategic Do's</h4>
+                    <ul id="heat-dos"></ul>
+                </div>
+                <div class="comp-box">
+                    <h4 class="dont-title">⛔ Prohibited Don'ts</h4>
+                    <ul id="heat-donts"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="standard-card" onclick="toggle('path-wrap')">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div style="font-size:3em; font-weight:900;">🔬 Protocol 03: Pathogen & Insect Lockdown</div>
+                <div style="color:var(--jade-glow); font-family:var(--font-mono); font-weight:bold;">[ INITIALIZE BIO-DEFENSE ]</div>
+            </div>
+        </div>
+        <div id="path-wrap" class="toggle-wrap">
+            <div class="forecast-block" style="border-color: var(--alert-red-glow);">
+                <div>
+                    <span class="forecast-label">Bio-Pathogen Alert</span>
+                    <h3 style="margin:0; font-size:2.5em;">Fungal Spore Saturation High (Humidity > 85%)</h3>
+                </div>
+                <div class="forecast-val" style="color:var(--alert-red-glow);">HIGH <small>Risk</small></div>
+            </div>
+            <div class="tool-overview">
+                <strong>Sovereign Objective:</strong> Early detection and containment of agricultural diseases and pest outbreaks using the Pathology Center database.
+            </div>
+            <div class="comparison-grid">
+                <div class="comp-box">
+                    <h4 class="do-title">✅ Strategic Do's</h4>
+                    <ul id="path-dos"></ul>
+                </div>
+                <div class="comp-box">
+                    <h4 class="dont-title">⛔ Prohibited Don'ts</h4>
+                    <ul id="path-donts"></ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-header" style="border-left-color: var(--jade-glow); margin-top: 150px;">🛠️ Strategic Intelligent Hubs</h2>
+        
+        <div class="utility-grid">
+            <div class="standard-card" onclick="nav('market-pg')" style="border: 3px solid var(--market-blue);">
+                <span style="font-size:5.5em;">📊</span><br><br>
+                <b style="font-size:2.5em; color:var(--market-blue);">Market Intelligence</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Real-Time Global Commodity Ticker</p>
+            </div>
+
+            <div class="standard-card" onclick="nav('iot-pg')" style="border: 3px solid var(--jade-glow);">
+                <span style="font-size:5.5em;">📡</span><br><br>
+                <b style="font-size:2.5em; color:var(--jade-glow);">IoT Command Center</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Real-Time Sovereign Mesh Telemetry</p>
+            </div>
+
+            <div class="standard-card" onclick="nav('purchase-pg')" style="border: 3px solid var(--gold-accent);">
+                <span style="font-size:5.5em;">🛒</span><br><br>
+                <b style="font-size:2.5em; color:var(--gold-accent);">Acquisition Hub</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Advanced Procurement: High-Tech Bio & Hardware</p>
+            </div>
+            
+            <div class="standard-card" onclick="nav('encyclopedia-pg')">
+                <span style="font-size:5.5em;">📚</span><br><br>
+                <b style="font-size:2.5em;">Agri-Encyclopedia</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Deep Learning Knowledge Base</p>
+            </div>
+
+            <div class="standard-card" onclick="nav('diet-pg')">
+                <span style="font-size:5.5em;">🥗</span><br><br>
+                <b style="font-size:2.5em;">Sovereign Nutrition</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Precision Caloric Optimization</p>
+            </div>
+            
+            <div class="standard-card" onclick="nav('track-pg')">
+                <span style="font-size:5.5em;">🍱</span><br><br>
+                <b style="font-size:2.5em;">Food Life Monitor</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Inventory & Decay Prevention</p>
+            </div>
+
+            <div class="standard-card" onclick="nav('ph-hub')">
+                <span style="font-size:5.5em;">🌾</span><br><br>
+                <b style="font-size:2.5em;">Post-Harvest Hub</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Atmospheric Cold-Chain Science</p>
+            </div>
+
+            <div class="standard-card" onclick="nav('pd-hub')">
+                <span style="font-size:5.5em;">🔬</span><br><br>
+                <b style="font-size:2.5em;">Pathology Center</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Pathogen Diagnostics & Rx</p>
+            </div>
+
+            <div class="standard-card" onclick="nav('cart-pg')" style="border: 3px dashed var(--jade-glow);">
+                <span style="font-size:5.5em;">🛍️</span><br><br>
+                <b style="font-size:2.5em;">Cart Interface</b><br>
+                <p style="color:var(--text-muted); font-size:1.3em;">Review & Authenticate Asset Queue</p>
+                <div id="cart-count-badge" class="cart-counter">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="market-pg">
+        <h2 style="font-size:5em;">📊 Market Intelligence Terminal</h2>
+        
+        <div class="market-ticker">
+            <div class="ticker-content" id="ticker-text">
+                LOADING GLOBAL AGRI-COMMODITY DATA... SYNCHRONIZING WITH MARKET EXCHANGES...
+            </div>
+        </div>
+
+        <div class="tool-overview">
+            <strong>Terminal Access:</strong> Real-time price ranges categorized by commodity type. Use this data to determine optimal harvest windows and identify market shortages.
+        </div>
+
+        <div class="market-columns-wrapper">
+            
+            <div class="market-col">
+                <div class="market-col-header col-fruit">🍎 Fruits</div>
+                <div id="market-list-fruit"></div>
+            </div>
+
+            <div class="market-col">
+                <div class="market-col-header col-veg">🥦 Vegetables</div>
+                <div id="market-list-veg"></div>
+            </div>
+
+            <div class="market-col">
+                <div class="market-col-header col-grain">🌾 Lentils & Grains</div>
+                <div id="market-list-grain"></div>
+            </div>
+
+        </div>
+
+        <button class="nav-back" onclick="nav('home')">← Return to Dashboard</button>
+    </div>
+
+    <div class="page" id="purchase-pg">
+        <h2 style="font-size:5em;">🛒 Sovereign Acquisition Hub</h2>
+        <div class="tool-overview">
+            <strong>Terminal Access:</strong> Authorized procurement for advanced agricultural defense and monitoring. All hardware is LoRa-compatible.
+        </div>
+        <div class="utility-grid">
+            <div class="product-card">
+                <div style="font-size:7em;">🧪</div>
+                <h3>Bio-Neem Remediation</h3>
+                <p>Pure organic cold-pressed pesticide for soft-bodied pests.</p>
+                <div class="price-label">$45</div>
+                <button onclick="addToCart('Bio-Neem', 45)">Add to Queue</button>
+            </div>
+            <div class="product-card">
+                <div style="font-size:7em;">📡</div>
+                <h3>LoRa Mesh Node V4</h3>
+                <p>Advanced sub-GHz environmental sensor gateway.</p>
+                <div class="price-label">$155</div>
+                <button onclick="addToCart('LoRa V4', 155)">Add to Queue</button>
+            </div>
+            <div class="product-card">
+                <div style="font-size:7em;">🚁</div>
+                <h3>Pollination Drone</h3>
+                <p>Micro-UAV for precision artificial pollination in greenhouses.</p>
+                <div class="price-label">$850</div>
+                <button onclick="addToCart('Pollin-Drone', 850)">Add to Queue</button>
+            </div>
+            <div class="product-card">
+                <div style="font-size:7em;">☀️</div>
+                <h3>Solar Sub-Pump</h3>
+                <p>High-head submersible pump for off-grid irrigation mesh.</p>
+                <div class="price-label">$540</div>
+                <button onclick="addToCart('Solar Pump', 540)">Add to Queue</button>
+            </div>
+            <div class="product-card">
+                <div style="font-size:7em;">📉</div>
+                <h3>Bio-Char Blend</h3>
+                <p>Premium soil amendment for long-term carbon sequestration.</p>
+                <div class="price-label">$32</div>
+                <button onclick="addToCart('Bio-Char', 32)">Add to Queue</button>
+            </div>
+            <div class="product-card">
+                <div style="font-size:7em;">🧬</div>
+                <h3>Myco-Inoculant</h3>
+                <p>Concentrated beneficial fungal spores for root immunity.</p>
+                <div class="price-label">$120</div>
+                <button onclick="addToCart('Myco-Inoc', 120)">Add to Queue</button>
+            </div>
+        </div>
+
+        <button class="nav-back" onclick="nav('home')">← Return to Dashboard</button>
+    </div>
+
+    <div class="page" id="iot-pg">
+        <h2 style="font-size:5em;">📡 IoT Command Center</h2>
+        
+        <div class="tool-overview">
+            <strong>Network Status:</strong> 36 Active Mesh Nodes | Latency: 38ms | Packet Loss: 0.001%
+        </div>
+        <div class="tele-grid">
+            <div class="tele-card">
+                <div class="tele-label">Soil Saturation</div>
+                <div class="tele-val" style="color:var(--jade-glow);">44.2%</div>
+                <small>Threshold: 35-50%</small>
+            </div>
+            <div class="tele-card">
+                <div class="tele-label">PAR Radiation</div>
+                <div class="tele-val" style="color:var(--gold-accent);">1250 <small>µmol</small></div>
+                <small>Status: Optimal Growth</small>
+            </div>
+            <div class="tele-card">
+                <div class="tele-label">CO2 Level</div>
+                <div class="tele-val" style="color:var(--market-blue);">415 <small>ppm</small></div>
+                <small>Ambient Baseline</small>
+            </div>
+            <div class="tele-card">
+                <div class="tele-label">Soil EC</div>
+                <div class="tele-val">1.8 <small>mS/cm</small></div>
+                <small>Salinity: Nominal</small>
+            </div>
+            <div class="tele-card">
+                <div class="tele-label">Leaf Wetness</div>
+                <div class="tele-val" style="color:var(--alert-red-glow);">12%</div>
+                <small>Pathogen Risk: Low</small>
+            </div>
+            <div class="tele-card">
+                <div class="tele-label">Node Battery</div>
+                <div class="tele-val">98%</div>
+                <small>Solar Recharge: Active</small>
+            </div>
+        </div>
+        <button class="nav-back" onclick="nav('home')">← Dashboard</button>
+    </div>
+
+    <div class="page" id="encyclopedia-pg">
+        <h2 style="font-size:5em;">📚 Agri-Encyclopedia</h2>
+        <div class="tool-overview">
+            <strong>Access Level:</strong> Unrestricted. The complete breakdown of all agricultural knowledge contained within the FreshGuard system kernel.
+        </div>
+        <div id="encyclopedia-content">
+            </div>
+        <button class="nav-back" onclick="nav('home')">← Dashboard</button>
+    </div>
+
+    <div class="page" id="diet-pg">
+        <h2 style="font-size:5em;">🥗 Sovereign Nutrition Engine</h2>
+        <div class="tool-overview">
+            <strong>Module Objective:</strong> Calculating precision nutritional loads while minimizing carbon footprint via local produce.
+        </div>
+        <div class="standard-card">
+            <h3>⚖️ Sustainable Biometric Calculator</h3>
+            <input type="number" id="weightInput" placeholder="Enter Body Weight (kg)">
+            <button onclick="calculateDiet()">Generate Precision Protocol</button>
+            <div id="dietResults"></div>
+        </div>
+        <button class="nav-back" onclick="nav('home')">← Return to Dashboard</button>
+    </div>
+
+    <div class="page" id="track-pg">
+        <h2 style="font-size:5em;">🍱 Food Life Monitor</h2>
+        <div class="tool-overview">
+            <strong>Module Objective:</strong> Mitigating household food waste via real-time decay tracking.
+        </div>
+        <div class="standard-card">
+            <input type="text" id="itemName" placeholder="Item Name (e.g. Organic Spinach)">
+            <input type="date" id="itemDate">
+            <button onclick="trackItem()">Add to Monitor Queue</button>
+        </div>
+        <div id="trackerList"></div>
+        <button class="nav-back" onclick="nav('home')">← Return to Dashboard</button>
+    </div>
+
+    <div class="page" id="ph-hub">
+        <h2 style="font-size:5em;">🌾 Post-Harvest Hub</h2>
+        <div class="utility-grid">
+            <div class="standard-card" onclick="renderSub('ph1')"><h3>📦 Handling</h3></div>
+            <div class="standard-card" onclick="renderSub('ph2')"><h3>❄️ Pre-Cooling</h3></div>
+            <div class="standard-card" onclick="renderSub('ph3')"><h3>🏠 Storage</h3></div>
+            <div class="standard-card" onclick="renderSub('ph4')"><h3>🚚 Transport</h3></div>
+        </div>
+        <button class="nav-back" onclick="nav('home')">← Dashboard</button>
+    </div>
+
+    <div class="page" id="pd-hub">
+        <h2 style="font-size:5em;">🔬 Pathology Center</h2>
+        <div class="utility-grid">
+            <div class="standard-card" onclick="renderSub('pd1')"><h3>🔍 Identification</h3></div>
+            <div class="standard-card" onclick="renderSub('pd2')"><h3>🛡️ Prevention</h3></div>
+            <div class="standard-card" onclick="renderSub('pd3')"><h3>💧 Resource Health</h3></div>
+            <div class="standard-card" onclick="renderSub('pd4')"><h3>🧪 Organic Rx</h3></div>
+        </div>
+        <button class="nav-back" onclick="nav('home')">← Dashboard</button>
+    </div>
+
+    <div class="page" id="dynamic-sub"></div>
+
+    <div class="page" id="cart-pg">
+        <h2 style="font-size:5em;">🛍️ Cart Interface</h2>
+        <div id="cart-items-container">
+            </div>
+        <div class="standard-card" style="margin-top:60px;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:3em;">TOTAL:</span>
+                <span id="cart-total" style="font-size:5em; color:var(--jade-glow);">$0</span>
+            </div>
+            <button onclick="finalizeOrder()">Finalize Acquisition</button>
+        </div>
+        <button class="nav-back" onclick="nav('home')">← Return to Dashboard</button>
+    </div>
+
+</div>
+
+<div id="toast-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
